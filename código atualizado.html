@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detetive Kay</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-size: 30px;
+            font-family: monospace;
+            margin: 0;
+            height: 100vh;
+            position: relative;
+            padding: 0 10px;
+        }
+        p {
+            margin: 0;
+            white-space: nowrap;
+            overflow-x: auto;
+            position: absolute;
+            animation: fade 6s infinite;
+            padding-left: 20px;
+        }
+        
+        @keyframes fade {
+            0% { opacity: 0; }
+            16.66% { opacity: 1; }
+            33.32% { opacity: 0; }
+            49.98% { opacity: 0; }
+            66.64% { opacity: 0; }
+            83.3% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        p:nth-child(2) { animation-delay: 1.2s; }
+        p:nth-child(3) { animation-delay: 2.4s; }
+        p:nth-child(4) { animation-delay: 3.6s; }
+        p:nth-child(5) { animation-delay: 4.8s; }
+        p:nth-child(6) { animation-delay: 6s; }
+        
+        p:nth-child(1) { top: 0; left: 0; }
+        p:nth-child(2) { top: 20%; left: 50%; }
+        p:nth-child(3) { top: 40%; left: 0; }
+        p:nth-child(4) { top: 60%; left: 50%; }
+        p:nth-child(5) { top: 80%; left: 0; }
+        p:nth-child(6) { top: 100%; left: 50%; }
+    </style>
+</head>
+<body>
+    <p>.. -- --. ..- .-. .-.-.-</p>
+    <p>-.-. --- --</p>
+    <p>-..-. -.-</p>
+    <p>--... .-. -.</p>
+    <p>----- .-.. ....</p>
+</body>
+</html>
